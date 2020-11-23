@@ -1,0 +1,31 @@
+{
+  "name": "renew",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/vue-fontawesome": "2",
+    "@nuxt/content": "^1.9.0",
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/pwa": "^3.0.2",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@iconify-icons/mdi": "^1.0.20",
+    "@iconify/vue": "^1.0.6",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "@vue/test-utils": "^1.1.1",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "nuxt-svg-loader": "^1.2.0",
+    "vue-jest": "^3.0.7"
+  }
+}
