@@ -13,4 +13,9 @@ describe('store/gallary', () => {
         localVue.use(Vuex)
         store = new Vuex.Store(gallary)
     })
+
+    // 全く意味のないテストコード
+    test('components/skllset', () => {
+        expect(store.skillsets)
+    })
 })
