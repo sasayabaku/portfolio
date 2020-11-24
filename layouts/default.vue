@@ -4,7 +4,7 @@
         <main class="contents">
             <nuxt />
         </main>
-        <div><Footer /></div>
+        <div class="footer"><Footer /></div>
     </div>
 </template>
 
@@ -29,5 +29,10 @@ export default {
 
     .contents {
         padding-top: 8vh;
+        position:relative;
+    }
+
+    .footer {
+        position: relative;
     }
 </style>

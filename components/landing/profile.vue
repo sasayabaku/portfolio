@@ -35,20 +35,20 @@ export default {
         return {
             skillItems: [
                 {
-                    icon: require("@/static/service-planning.svg"),
+                    icon: "/service-planning.svg",
                     clid: "cl-red",
                     title: "Service Planning",
                     description: "モックアップ / プロトタイピングを用いたサービス企画"
                 },
                 {
                     // icon: require("@/static/ml.svg"),
-                    icon: require('@/static/ml.svg'),
+                    icon: '/ml.svg',
                     clid: "cl-blue",
                     title: "Machine Learning",
                     description: "データ分析 / 機械学習のモデル構築によるAIサービスの開発"
                 },
                 {
-                    icon: require("@/static/container.svg"),
+                    icon: '/container.svg',
                     clid: "cl-green",
                     title: "Infrastructure",
                     description: "分析ツール運用 / サービス運用のための基盤設計・運用"

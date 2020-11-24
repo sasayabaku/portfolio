@@ -33,15 +33,15 @@ export default {
         return {
             icons:[
                 {
-                    icon: require('@/static/icons/pytorch.svg'),
+                    icon: '/icons/pytorch.svg',
                     clid: "cl-red",
                 },
                 {
-                    icon: require('@/static/icons/docker.svg'),
+                    icon: '/icons/docker.svg',
                     clid: "cl-blue"
                 },
                 {
-                    icon: require('@/static/icons/react.svg'),
+                    icon: '/icons/react.svg',
                     clid: "cl-purple"
                 }
             ]
