@@ -9,7 +9,7 @@
                 </div>
             </v-col>
 
-            <v-col md="5" align="center">
+            <v-col sm="12" md="5" align="center">
                 <div id="flow">
                     <div class="title">Refining Skills</div>
                     <div class="description">
