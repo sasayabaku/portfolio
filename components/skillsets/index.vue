@@ -9,7 +9,7 @@
                 </div>
             </v-col>
 
-            <v-col md="5" align="center">
+            <v-col sm="12" md="5" align="center">
                 <div id="flow">
                     <div class="title">Refining Skills</div>
                     <div class="description">
@@ -33,15 +33,15 @@ export default {
         return {
             icons:[
                 {
-                    icon: require('@/static/icons/pytorch.svg'),
+                    icon: '/icons/pytorch.svg',
                     clid: "cl-red",
                 },
                 {
-                    icon: require('@/static/icons/docker.svg'),
+                    icon: '/icons/docker.svg',
                     clid: "cl-blue"
                 },
                 {
-                    icon: require('@/static/icons/react.svg'),
+                    icon: '/icons/react.svg',
                     clid: "cl-purple"
                 }
             ]
