@@ -1,7 +1,7 @@
 <template>
     <div id="garally">
         <v-row id="contents" justify="center" align="center">
-            <v-col sm="6" md="3" v-for="skill in $store.state.gallary.skillsets" :key="skill.id">
+            <v-col sm="6" md="3" lg="2" v-for="skill in $store.state.gallary.skillsets" :key="skill.id">
                 <div class="content">
                     <div class="icon" :id="skill.clid">
                      <img :src="skill.imgfile" />
@@ -10,18 +10,42 @@
                     <div class="description">{{skill.description}}</div>
 
                     <div class="links">
-                        <button class="flat-button"><strong>Detail Skill</strong></button>
-                        <button class="reverse-flat-button"><strong>Gallery</strong></button>
+                        <button class="flat-button" @click="showDetail"><strong>Detail</strong></button>
+                        <button class="reverse-flat-button" @click="showGallary"><strong>Gallery</strong></button>
                     </div>
                 </div>
             </v-col>
         </v-row>
+        <modal name="showDetail" :resizable="false" width="80%">
+            <div>
+                Show Detail
+            </div>
+        </modal>
+        <modal name="showGallary" :resizable="false" width="80%">
+            <div>
+                Show Gallary
+            </div>
+        </modal>
     </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex"
 export default {
+    methods: {
+        showDetail() {
+            this.$modal.show('showDetail');
+        },
+        hideDetail() {
+            this.$modal.hide('showDetail');
+        },
+        showGallary() {
+            this.$modal.show('showGallary');
+        },
+        hideGallary() {
+            this.$modal.hide('showGallary');
+        }
+    }
 }
 </script>
 
@@ -38,7 +62,7 @@ export default {
         border-radius: 0.5rem;
         padding: 1.5rem;
         min-height: 20rem;
-        min-width: 290px;
+        min-width: 200px;
         position: relative;
 
         .icon {
