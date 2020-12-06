@@ -1,7 +1,7 @@
 <template>
     <div id="garally">
         <v-row id="contents" justify="center" align="center">
-            <v-col sm="6" md="3" lg="2" v-for="skill in $store.state.gallary.skillsets" :key="skill.id">
+            <v-col sm="6" md="3" lg="3" v-for="skill in $store.state.gallary.skillsets" :key="skill.id">
                 <div class="content">
                     <div class="icon" :id="skill.clid">
                      <img :src="skill.imgfile" />
@@ -10,40 +10,35 @@
                     <div class="description">{{skill.description}}</div>
 
                     <div class="links">
-                        <button class="flat-button" @click="showDetail"><strong>Detail</strong></button>
-                        <button class="reverse-flat-button" @click="showGallary"><strong>Gallery</strong></button>
+                        <button class="flat-button" @click="showModal(skill.name+'Detail')"><strong>Detail</strong></button>
+                        <!-- 以下でGallaryの情報を更新 -->
+                        <button class="reverse-flat-button" @click="showModal('showGallary')"><strong>Gallery</strong></button>
                     </div>
                 </div>
             </v-col>
         </v-row>
-        <modal name="showDetail" :resizable="false" width="80%">
-            <div>
-                Show Detail
+        <div>
+            <modal name="DockerDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><DockerDetail/></modal>
+            <modal name="showGallary" :resizable="false" width="90%">
+            <div>   
+                Show Gallary 工事中
             </div>
-        </modal>
-        <modal name="showGallary" :resizable="false" width="80%">
-            <div>
-                Show Gallary
-            </div>
-        </modal>
+            </modal>
+        </div>
     </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex"
+import DockerDetail from "@/components/gallary/docker.vue";
 export default {
+    components: {
+        DockerDetail,
+    },
+
     methods: {
-        showDetail() {
-            this.$modal.show('showDetail');
-        },
-        hideDetail() {
-            this.$modal.hide('showDetail');
-        },
-        showGallary() {
-            this.$modal.show('showGallary');
-        },
-        hideGallary() {
-            this.$modal.hide('showGallary');
+        showModal(value) {
+            this.$modal.show(value)
         }
     }
 }
@@ -80,7 +75,6 @@ export default {
         .name {
             margin-top: 0.8rem;
             font-size: 1.2rem;
-            // font-weight: 800;
         }
 
         .description {

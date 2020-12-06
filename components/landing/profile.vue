@@ -41,7 +41,6 @@ export default {
                     description: "モックアップ / プロトタイピングを用いたサービス企画"
                 },
                 {
-                    // icon: require("@/static/ml.svg"),
                     icon: '/ml.svg',
                     clid: "cl-blue",
                     title: "Machine Learning",
