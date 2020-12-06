@@ -11,7 +11,7 @@
         </v-row>
 
         <v-row id="skillComponents">
-            <v-col md="6" xs="12" v-for="(item, i) in skillItems" :key="i" :to="item.to">
+            <v-col md="6" sm="8" xs="12" v-for="(item, i) in skillItems" :key="i" :to="item.to">
                 <div class="content">
                     <div class="icon" :id="item.clid">
                         <img :src="item.icon"/>
@@ -41,7 +41,6 @@ export default {
                     description: "モックアップ / プロトタイピングを用いたサービス企画"
                 },
                 {
-                    // icon: require("@/static/ml.svg"),
                     icon: '/ml.svg',
                     clid: "cl-blue",
                     title: "Machine Learning",

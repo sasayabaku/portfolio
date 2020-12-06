@@ -7,8 +7,8 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - renew',
-    title: 'renew',
+    titleTemplate: '%s - sasayabaku',
+    title: 'sasayabaku',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -26,6 +26,9 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    {
+      src: '~/plugins/main.js'
+    }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
