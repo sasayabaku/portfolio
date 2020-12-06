@@ -1,32 +1,25 @@
 <template>
     <div class="modal-content">
         <div class="title">
-            <div class="icon" id="cl-blue">
-                <img src="/icons/docker.svg">
+            <div class="icon" id="cl-green">
+                <img src="/icons/vue.svg">
             </div>
             <div class="title-text">
-                <h3 class="name">Docker</h3>
-                <div class="subname">Container tool</div>
+                <h3 class="name">Vue</h3>
+                <div class="subname">JavaScript Library</div>
             </div>
         </div>
 
         <div class="body">
             <div class="abstract">
-                APIサーバの実装 / 機械学習モデルの評価 / 各種テスト実行 をコンテナで実装<br />
-                色々やってみてます。
+                Vueで、PoCやサービスのプロトタイプを作成しています。
             </div>
             <div class="case">
                 <h2 class="case-tag">Case 1</h2>
                 <div class="description">
-                    Argo Projectを用いて、データ整形・モデルの学習・モデルの評価 のワークフローを実装スケジューリングが不要だったことと、既にコンテナとしてまとまっていたため。Apache Airflowではなく Argo を採用。
+                    このプログラム
                 </div>
                 <div class="figure"><img src="/gallary/docker/Argo_development.png" width="80%"/></div>
-            </div>
-            <div class="case">
-                <h2 class="case-tag">Case 2</h2>
-                <div class="description">
-                    <pre>GCP / AWSなどのクラウド環境にコンテナをデプロイすることも可能</pre>
-                </div>
             </div>
         </div>
     </div>
@@ -84,8 +77,8 @@
     }
 }
 
-#cl-blue {
-    background-color: #4f4ca6;
+#cl-green {
+    background-color: #4bb088;
 }
 
 </style>

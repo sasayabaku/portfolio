@@ -19,10 +19,14 @@
         </v-row>
         <div>
             <modal name="DockerDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><DockerDetail/></modal>
+            <modal name="PyTorchDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><PyTorchDetail/></modal>
+            <modal name="ReactDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><ReactDetail/></modal>
+            <modal name="VueDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><VueDetail/></modal>
+
             <modal name="showGallary" :resizable="false" width="90%">
-            <div>   
-                Show Gallary 工事中
-            </div>
+                <div>   
+                    Show Gallary 工事中
+                </div>
             </modal>
         </div>
     </div>
@@ -31,9 +35,16 @@
 <script>
 import { mapGetters } from "vuex"
 import DockerDetail from "@/components/gallary/docker.vue";
+import PyTorchDetail from "@/components/gallary/pytorch.vue";
+import ReactDetail from "@/components/gallary/react.vue";
+import VueDetail from "@/components/gallary/vue.vue";
+
 export default {
     components: {
         DockerDetail,
+        PyTorchDetail,
+        ReactDetail,
+        VueDetail
     },
 
     methods: {

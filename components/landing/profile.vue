@@ -11,7 +11,7 @@
         </v-row>
 
         <v-row id="skillComponents">
-            <v-col md="6" sm="8" xs="12" v-for="(item, i) in skillItems" :key="i" :to="item.to">
+            <v-col md="6" sm="12" xs="12" class="contentRow" v-for="(item, i) in skillItems" :key="i" :to="item.to">
                 <div class="content">
                     <div class="icon" :id="item.clid">
                         <img :src="item.icon"/>
@@ -69,35 +69,40 @@ export default {
     }
 
     #skillComponents {
-        .content {
-            display: flex;
-            justify-content: center;
-            margin-top: 4rem;
 
-            .icon {
-                width: 5rem;
-                height: 5rem;
-                border-radius: 25%;
+        .contentRow {
+
+
+            .content {
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                margin-top: 4rem;
 
-                img {
-                    width: 70%;
+                .icon {
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 25%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 70%;
+                    }
                 }
-            }
 
-            .charactor {
-                display: block;
-                padding-left: 1rem;
+                .charactor {
+                    display: block;
+                    margin-left: 1rem;
 
-                .title {
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    color: $base-color;
-                }
-                .description {
-                    color: $brighter-color;
+                    .title {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: $base-color;
+                    }
+                    .description {
+                        color: $brighter-color;
+                    }
                 }
             }
         }
