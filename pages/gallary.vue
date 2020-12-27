@@ -2,7 +2,7 @@
     <div id="garally">
         <v-row id="contents" justify="center" align="center">
             <v-col sm="6" md="3" lg="3" v-for="skill in $store.state.gallary.skillsets" :key="skill.id">
-                <div class="content">
+                <div class="content" data-aos="fade-up">
                     <div class="icon" :id="skill.clid">
                      <img :src="skill.imgfile" />
                     </div>

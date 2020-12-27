@@ -1,5 +1,5 @@
 <template>
-    <div id="skillsets">
+    <div id="skillsets" data-aos="fade-left" data-aos-delay="1000">
         <v-row justify="space-around">
             <v-col md="7" align="center">
                 <div id="iconsView">
