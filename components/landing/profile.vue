@@ -1,5 +1,5 @@
 <template>
-    <div id="profile">
+    <div id="profile" data-aos="zoom-in">
         <v-row align="center">
             <v-col cols="12" align="center">
                 <div id="greeting">hi! My name is Sasayabaku</div>
