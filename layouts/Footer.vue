@@ -8,7 +8,7 @@
         </div>
         <div class="bottomRow">
             <div class="copyrightDocument">
-                <small>&copy; 2020 My Name</small>
+                <small>&copy; 2020 sasayabaku</small>
             </div>
         </div>
     </div>

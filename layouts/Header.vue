@@ -2,8 +2,8 @@
     <div class="header">
         <nav class="menu">
             <span class="menu-item"><nuxt-link to='/'>Home</nuxt-link></span>
-            <span class="menu-item"><nuxt-link to='inspire'>Blog</nuxt-link></span>
-            <span class="menu-item"><nuxt-link to='gallary'>Gallary</nuxt-link></span>
+            <span class="menu-item"><nuxt-link to='/blog'>Blog</nuxt-link></span>
+            <span class="menu-item"><nuxt-link to='/gallary'>Gallary</nuxt-link></span>
         </nav>
     </div>
 </template>

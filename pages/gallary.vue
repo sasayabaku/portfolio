@@ -2,7 +2,7 @@
     <div id="garally">
         <v-row id="contents" justify="center" align="center">
             <v-col sm="6" md="3" lg="3" v-for="skill in $store.state.gallary.skillsets" :key="skill.id">
-                <div class="content" data-aos="fade-up">
+                <div class="content" data-aos="fade-up" data-aos-delay="400">
                     <div class="icon" :id="skill.clid">
                      <img :src="skill.imgfile" />
                     </div>
@@ -17,7 +17,7 @@
                 </div>
             </v-col>
         </v-row>
-        <div>
+        <div class="content-modal">
             <modal name="DockerDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><DockerDetail/></modal>
             <modal name="PyTorchDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><PyTorchDetail/></modal>
             <modal name="ReactDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><ReactDetail/></modal>
@@ -54,6 +54,12 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+    .vm--modal {
+        margin: 2rem 0;
+    }
+</style>
 
 <style lang="scss" scoped>
 

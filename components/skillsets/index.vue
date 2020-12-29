@@ -1,7 +1,7 @@
 <template>
-    <div id="skillsets" data-aos="fade-left" data-aos-delay="1000">
+    <div id="skillsets" data-aos="fade-left" data-aos-delay="100">
         <v-row justify="space-around">
-            <v-col md="7" align="center">
+            <v-col md="6" align="center">
                 <div id="iconsView">
                     <div class="icon" :id="item.clid" v-for="(item, i) in icons" :key="i">
                         <img :src="item.icon">
@@ -9,7 +9,7 @@
                 </div>
             </v-col>
 
-            <v-col sm="12" md="5" align="center">
+            <v-col sm="12" md="6" align="center">
                 <div id="flow">
                     <div class="title">Refining Skills</div>
                     <div class="description">
@@ -65,7 +65,8 @@ export default {
     }
 
     #flow {
-        width: 100%;
+        // width: 100%;
+        width: 50%;
         height: 300px;
         display: block;
         text-align: left;
@@ -85,7 +86,7 @@ export default {
         .movepage {
 
             position: relative;
-            top: 3rem;
+            top: 1rem;
 
             .goDetail {
                 color: $accentColor;
