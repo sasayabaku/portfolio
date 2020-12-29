@@ -3,7 +3,7 @@
         <v-row id="contents" justify="center" align="center"> 
             <v-col sm="12" md="12" lg="6" v-for="article in articles" :key="article">
                 <div class="card-content" data-aos="zoom-out-down">
-                    <blog-card :image="article.img" :title="article.title" :description="article.description" />
+                    <nuxt-link :to="article.path"><blog-card :image="article.img" :title="article.title" :description="article.description"/></nuxt-link>
                 </div>
             </v-col>
         </v-row>

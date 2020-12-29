@@ -23,6 +23,10 @@ export default {
     body {
         font-family: Helvetica, sans-serif;
     }
+
+    a {
+        text-decoration: none;
+    }
 </style>
 
 <style scoped>
