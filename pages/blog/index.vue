@@ -7,7 +7,6 @@
                 </div>
             </v-col>
         </v-row>
-        <!-- <nuxt-link :to="article.path">{{ article.title }}</nuxt-link> -->
     </div>
 </template>
 
