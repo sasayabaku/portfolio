@@ -30,6 +30,10 @@ export default {
 
         display: flex;
 
+        &:hover {
+            opacity: 0.5;
+        }
+
         .image {
             position: relative;
             height: 13rem;

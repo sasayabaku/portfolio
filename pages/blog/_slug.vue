@@ -1,5 +1,5 @@
 <template>
-    <article class="blog">
+    <article class="blog" data-aos="fade-up" data-aos-delay="500">
         <div class="img"><img :src="article.img"/></div>
         <div class="title">{{ article.title }}</div>
         <div class="history">Last Update: {{formatDate(article.updatedAt)}}</div>
