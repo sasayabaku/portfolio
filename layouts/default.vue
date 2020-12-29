@@ -19,6 +19,16 @@ export default {
 }
 </script>
 
+<style lang="scss">
+    body {
+        font-family: Helvetica, sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+
 <style scoped>
     .header {
         width: 100%;
