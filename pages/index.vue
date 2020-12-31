@@ -1,8 +1,9 @@
 <template>
   <div id="index">
     <div class="page2"><Introduce /></div>
-    <div class="page"><Landing /></div>    
-    <div class="page2"><Skillsets /></div>
+    <div class="page"><Landing /></div> 
+    <div class="page2"><Activity /></div>
+    <div class="page"><Skillsets /></div>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import VuetifyLogo from '~/components/VuetifyLogo.vue'
 import Landing from '~/components/landing';
 import Skillsets from '@/components/skillsets';
 import Introduce from '@/components/intro';
+import Activity from '@/components/landing/activity';
 
 export default {
   components: {
@@ -20,7 +22,8 @@ export default {
     VuetifyLogo,
     Landing,
     Skillsets,
-    Introduce
+    Introduce,
+    Activity
   }
 }
 </script>

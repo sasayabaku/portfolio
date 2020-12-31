@@ -35,28 +35,42 @@ export default {
 
         h1 {
             margin: 3rem 0;
-
-            &::after {
+            padding-left: 1rem;
+            display: inline-flex;
+            align-items: center;
+            width: 100%;
+            height: 4rem;
+            background-color: lavenderblush;
+            
+            &::before {
                 content: "";
                 position: absolute;
-                width: 60%;
-                height: 2px;
+                width: 5px;
+                height: 4rem;
                 background: #e4286d;
                 left: 0;
-                transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-                margin: 2rem 0;
-
             }
         }
 
         h2 {
             margin: 2rem 0 1rem 0;
-            // color: green;
+            padding-left: 1rem;
+            display: inline-flex;
+            align-items: center;
+            color: #e4286d;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 2rem;
+                background: #e4286d;
+                left: 0;
+            }
         }
 
         h3 {
             margin: 2rem 0 1rem 0;
-            // color: yellow;
         }
     }   
 </style>
