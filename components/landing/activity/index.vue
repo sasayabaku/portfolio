@@ -24,7 +24,7 @@
                                     This is my Repository
                                 </div>
                             </div>
-                            <a href="https://github.com/sasayabaku" />
+                            <a href="https://github.com/sasayabaku" target="_blank" rel="noopener noreferrer" />
                         </div>
                     </v-col>
                     <v-col cols="12" sm="12" md="6" lg="4" align="center"> 
@@ -40,7 +40,7 @@
                                     Personal Tech Blog
                                 </div>
                             </div>
-                            <a href="https://qiita.com/sasayabaku" />
+                            <a href="https://qiita.com/sasayabaku" target="_blank" rel="noopener noreferrer" />
                         </div>
                     </v-col> 
                     <v-col cols="12" sm="12" md="6" lg="4" align="center" data-aos="zoom-in" data-aos-delay="500"> 
@@ -56,7 +56,7 @@
                                     My Business History
                                 </div>
                             </div>
-                            <a href="https://www.linkedin.com/in/takenobu-sasatani-2701a514b" />
+                            <a href="https://www.linkedin.com/in/takenobu-sasatani-2701a514b" target="_blank" rel="noopener noreferrer" />
                         </div>
                     </v-col>                     
                 </v-row>
