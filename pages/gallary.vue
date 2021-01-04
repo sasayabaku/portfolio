@@ -1,5 +1,24 @@
 <template>
     <div id="garally">
+        <v-row class="head">
+            <v-col cols="12" sm="12" md="6" lg="6" align="center">
+                <div class="text">
+                    <div class="accent">
+                        Gallary
+                    </div>
+                    <div class="description">
+                        Development Experiment.
+                    </div>
+                </div>
+            </v-col>
+            <v-col cols="12" sm="12" md="6" lg="6" align="center">
+                <div class="image">
+                    <img src="gallary_illust.svg" />
+                </div>
+                <div class="copyright">illustrate on <a href="https://undraw.co">unDraw</a></div>
+            </v-col>
+        </v-row>
+
         <v-row id="contents" justify="center" align="center">
             <v-col sm="6" md="3" lg="3" v-for="skill in $store.state.gallary.skillsets" :key="skill.id">
                 <div class="content" data-aos="fade-up" data-aos-delay="400">
@@ -64,9 +83,53 @@ export default {
 <style lang="scss" scoped>
 
     #garally {
-        margin-bottom: 100px;
-        padding: 0 5rem;
-        
+        margin: 1rem 0;
+        padding: 0 3rem;
+
+
+        .head {
+            padding: 2rem 0;
+            margin: 1rem 0;
+        }
+
+        .image {
+            height: 10rem;
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .text {
+        display: block;
+        width: 90%;
+        margin: 0 10rem;
+
+        .accent {
+            text-align: left;
+            font-family: 'arial';
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        .description {
+            margin-top: 1rem;
+            text-align: left;
+            font-size: 1.2rem;
+            color: #626a7f;
+        }
+    }    
+
+    .copyright {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        padding-left: 2rem;
+        color: #cecece;
+
+        a {
+            text-decoration-line: underline;
+            color: #cecece;
+        }
     }
 
     .content{
