@@ -1,12 +1,18 @@
 <template>
     <div class="card">
-        <div class="image">
-            <img :src="image" />
-        </div>
-        <div class="text">
-            <div class="title">{{ title }}</div>
-            <div class="description">{{ description }}</div>
-        </div>
+        <v-row align="center">
+            <v-col cols="12" md="6" align="center">
+                <div class="image">
+                    <img :src="image" />
+                </div>
+            </v-col>
+            <v-col cols="12" md="6">
+                <div class="text">
+                    <div class="title">{{ title }}</div>
+                    <div class="description">{{ description }}</div>
+                </div>
+            </v-col>
+        </v-row>
     </div>
 </template>
 
@@ -26,10 +32,7 @@ export default {
         border-radius: 0.5rem;
         padding: 1rem;
 
-        height: 15rem;
-
         display: flex;
-
         &:hover {
             opacity: 0.5;
         }
@@ -37,7 +40,7 @@ export default {
         .image {
             position: relative;
             height: 13rem;
-            width: 45%;
+            width: 20rem;
             border: 1px solid $brighter-color;
             border-radius: 0.5rem;
             overflow: hidden;
@@ -50,18 +53,16 @@ export default {
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
 
-
-                width: auto;
-                height: auto;
+                width: 100%;
+                height: 100%;
                 max-width: 120%;
-                max-heigit: 120%;
+                max-height: 120%;
             }
         }
 
         .text {
             margin-left: 1.5rem;
             padding-top: 1rem;
-            width: 55%;
             
             .title {
                 font-weight: 500;

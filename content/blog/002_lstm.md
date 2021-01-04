@@ -1,5 +1,5 @@
 ---
-title: LSMTで検証してみた
+title: LSTMで検証してみた
 description: 'lsmtlstm'
 img: '/blog/unsplash.jpg'
 ---

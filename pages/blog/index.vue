@@ -1,7 +1,7 @@
 <template>
     <div id="blog">
         <v-row id="contents" justify="center" align="center"> 
-            <v-col sm="12" md="12" lg="6" v-for="article in articles" :key="article">
+            <v-col cols="12" sm="12" md="12" lg="6" v-for="article in articles" :key="article">
                 <div class="card-content" data-aos="zoom-out-down">
                     <nuxt-link :to="article.path"><blog-card :image="article.img" :title="article.title" :description="article.description"/></nuxt-link>
                 </div>
