@@ -4,27 +4,61 @@
             <v-col cols="12" align="center">
                 <div class="flow">
                     <div class="activity">Activity</div>
+                    <div class="overview">
+                        These are My Activity.
+                    </div>
                 </div>
             </v-col>
             <v-col cols="12" align="center">
                 <v-row>
-                <v-col cols="4" md="4" align="center">
-                    <div class="card" id="github">
-                        <div class="title"> 
-                            GitHub
+                    <v-col cols="12" sm="12" md="6" lg="4" align="center">
+                        <div class="card" id="github" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="image">
+                                <img src="/icons/Github.png" />
+                            </div>
+                            <div class="text">
+                                <div class="title"> 
+                                    GitHub
+                                </div>
+                                <div class="description">
+                                    This is my Repository
+                                </div>
+                            </div>
+                            <a href="https://github.com/sasayabaku" />
                         </div>
-                        <div class="description">
+                    </v-col>
+                    <v-col cols="12" sm="12" md="6" lg="4" align="center"> 
+                        <div class="card" id="qiita" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="image">
+                                <img src="/icons/Qiita.png" />
+                            </div>
+                            <div class="text">
+                                <div class="title">
+                                    Qiita
+                                </div>
+                                <div class="description">
+                                    Personal Tech Blog
+                                </div>
+                            </div>
+                            <a href="https://qiita.com/sasayabaku" />
                         </div>
-                    </div>
-                </v-col>
-                <v-col cols="4" md="4" align="center"> 
-                    <div class="card" id="qiita">
-                        <div class="title">
+                    </v-col> 
+                    <v-col cols="12" sm="12" md="6" lg="4" align="center" data-aos="zoom-in" data-aos-delay="500"> 
+                        <div class="card" id="linkedin">
+                            <div class="image">
+                                <img src="/icons/Linkedin.png" />
+                            </div>
+                            <div class="text">
+                                <div class="title">
+                                    LinkedIn
+                                </div>
+                                <div class="description">
+                                    My Business History
+                                </div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/takenobu-sasatani-2701a514b" />
                         </div>
-                        <div class="description">
-                        </div>
-                    </div>
-                </v-col> 
+                    </v-col>                     
                 </v-row>
             </v-col>
         </v-row>
@@ -44,9 +78,56 @@ export default {
         font-family: 'arial';
     }
 
+    .overview {
+        margin-top: 0.5rem;
+        color: #626a7f;
+    }
+
     .card {
-        height: 200px;
+        height: 100px;
         width: 400px;
-        border: 1px solid #e2e2e2;
+        border: 3px solid #e2e2e2;
+        border-radius: 1rem;
+        position: relative;
+        display:flex;
+        align-items: center;
+
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image {
+            height: 100%;
+            width: 20%;
+            margin: 0 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 70%;
+            }
+
+        }
+
+        .text {
+            width: 70%;
+
+            display:block;
+            text-align: left;
+
+            .title {
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+
+            .description {
+                padding-top: 0.3rem;
+                color: #707070;
+            }
+        }
+
     }
 </style>
