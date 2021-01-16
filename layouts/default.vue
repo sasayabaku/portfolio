@@ -33,6 +33,7 @@ export default {
     .header {
         width: 100%;
         height: 8vh;
+        min-height: 60px;
         position: fixed;
         z-index: 1;
     }
