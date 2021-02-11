@@ -20,7 +20,7 @@
         </v-row>
 
         <v-row id="contents" justify="center" align="center">
-            <v-col sm="6" md="3" lg="3" v-for="skill in $store.state.gallary.skillsets" :key="skill.id">
+            <v-col cols="12" sm="6" md="4" lg="3" v-for="skill in $store.state.gallary.skillsets" :key="skill.id">
                 <div class="content" data-aos="fade-up" data-aos-delay="400">
                     <div class="icon" :id="skill.clid">
                      <img :src="skill.imgfile" />

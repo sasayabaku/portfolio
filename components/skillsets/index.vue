@@ -1,7 +1,7 @@
 <template>
-    <div id="skillsets" data-aos="fade-left" data-aos-delay="100">
+    <div id="skillsets">
         <v-row justify="space-around">
-            <v-col md="6" align="center">
+            <v-col md="6" align="center" data-aos="zoom-in" data-aos-delay="100">
                 <div id="iconsView">
                     <div class="icon" :id="item.clid" v-for="(item, i) in icons" :key="i">
                         <img :src="item.icon">
@@ -9,7 +9,7 @@
                 </div>
             </v-col>
 
-            <v-col sm="12" md="6" align="center">
+            <v-col cols="12" sm="12" md="6" align="center" data-aos="fade-left" data-aos-delay="200">
                 <div id="flow">
                     <div class="title">Refining Skills</div>
                     <div class="description">
