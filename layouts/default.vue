@@ -19,10 +19,21 @@ export default {
 }
 </script>
 
+<style lang="scss">
+    body {
+        font-family: Helvetica, sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+
 <style scoped>
     .header {
         width: 100%;
         height: 8vh;
+        min-height: 60px;
         position: fixed;
         z-index: 1;
     }

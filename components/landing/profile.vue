@@ -1,25 +1,26 @@
 <template>
-    <div id="profile">
+    <div id="profile" data-aos="zoom-in" data-aos-delay="100">
         <v-row align="center">
             <v-col cols="12" align="center">
-                <div id="greeting">hi! My name is Sasayabaku</div>
+                <div id="greeting">Skillsets</div>
                 <div class="overview">
-                    この辺りに自己紹介を書いていくよ<br />
-                    改行とか使っていくよ
+                    These are skillsets.
                 </div>  
             </v-col>
         </v-row>
 
         <v-row id="skillComponents">
-            <v-col md="6" xs="12" v-for="(item, i) in skillItems" :key="i" :to="item.to">
-                <div class="content">
-                    <div class="icon" :id="item.clid">
-                        <img :src="item.icon"/>
-                    </div>
-                    <div class="charactor">
-                        <div class="title">{{item.title}}</div>
-                        <div class="description">
-                            {{item.description}}
+            <v-col cols="12" md="6" sm="12" xs="12" v-for="(item, i) in skillItems" :key="i" :to="item.to">
+                <div class="contentRow">
+                    <div class="content">
+                        <div class="icon" :id="item.clid">
+                            <img :src="item.icon"/>
+                        </div>
+                        <div class="charactor">
+                            <div class="title">{{item.title}}</div>
+                            <div class="description">
+                                {{item.description}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -41,7 +42,6 @@ export default {
                     description: "モックアップ / プロトタイピングを用いたサービス企画"
                 },
                 {
-                    // icon: require("@/static/ml.svg"),
                     icon: '/ml.svg',
                     clid: "cl-blue",
                     title: "Machine Learning",
@@ -70,35 +70,46 @@ export default {
     }
 
     #skillComponents {
-        .content {
+
+        .contentRow {
+
             display: flex;
             justify-content: center;
-            margin-top: 4rem;
 
-            .icon {
-                width: 5rem;
-                height: 5rem;
-                border-radius: 25%;
+            .content {
+                width: 85%;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                // justify-content: center;
+                margin-top: 4rem;
 
-                img {
-                    width: 70%;
+                .icon {
+                    width: 20%;
+                    height: 5rem;
+                    max-width: 5rem;
+                    min-width: 5rem;
+                    border-radius: 25%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 70%;
+                    }
                 }
-            }
 
-            .charactor {
-                display: block;
-                padding-left: 1rem;
+                .charactor {
+                    display: block;
+                    margin-left: 1rem;
+                    width: 80%;
 
-                .title {
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    color: $base-color;
-                }
-                .description {
-                    color: $brighter-color;
+                    .title {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: $base-color;
+                    }
+                    .description {
+                        color: $brighter-color;
+                    }
                 }
             }
         }
@@ -120,6 +131,11 @@ export default {
     #greeting{
         font-size: 2rem;
         font-weight: 600;
+    }
+
+    .overview {
+        margin-top: 0.5rem;
+        color: #626a7f;
     }
 
 </style>
