@@ -21,11 +21,16 @@ export default {
 
 <style lang="scss">
     body {
+        font-size: 16px;
         font-family: Helvetica, sans-serif;
     }
 
     a {
         text-decoration: none;
+    }
+
+    .v-tab {
+        text-transform: none !important;
     }
 </style>
 
