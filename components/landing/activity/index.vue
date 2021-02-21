@@ -62,16 +62,25 @@
                 </v-row>
             </v-col>
         </v-row>
+        <v-row class="sub-component" id="activity-chart" data-aos="zoom-in" data-aos-delay="100"><ActivityChart /></v-row>
     </div>
 </template>
 
 <script>
+import ActivityChart from './activity-chart'
 export default {
-    
+    components: {
+        ActivityChart
+    }
 }
 </script>
 
 <style lang="scss" scoped>
+
+    .sub-component {
+        margin: 2rem 0
+    }
+
     .activity {
         font-size: 2rem;
         font-weight: 600;
@@ -84,8 +93,8 @@ export default {
     }
 
     .card {
-        height: 100px;
-        width: 400px;
+        height: 80px;
+        width: 300px;
         border: 3px solid #e2e2e2;
         border-radius: 1rem;
         position: relative;
@@ -119,7 +128,7 @@ export default {
             text-align: left;
 
             .title {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
                 font-weight: 600;
             }
 
@@ -129,5 +138,9 @@ export default {
             }
         }
 
+    }
+
+    #activity-chart {
+        padding: 0 2rem;
     }
 </style>

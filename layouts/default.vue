@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="header"><Header/></div>
-        <main class="contents">
+        <div class="contents">
             <nuxt />
-        </main>
+        </div>
         <div class="footer"><Footer /></div>
     </div>
 </template>
@@ -21,11 +21,17 @@ export default {
 
 <style lang="scss">
     body {
+        font-size: 16px;
         font-family: Helvetica, sans-serif;
+        width: 100vw;
     }
 
     a {
         text-decoration: none;
+    }
+
+    .v-tab {
+        text-transform: none !important;
     }
 </style>
 
@@ -39,11 +45,13 @@ export default {
     }
 
     .contents {
+        width: 100vw;
         padding-top: 8vh;
-        position:relative;
+        position: relative;
     }
 
     .footer {
+        width: 100%;
         position: relative;
     }
 </style>
