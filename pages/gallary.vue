@@ -52,7 +52,6 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex"
 import DockerDetail from "@/components/gallary/docker.vue";
 import PyTorchDetail from "@/components/gallary/pytorch.vue";
 import ReactDetail from "@/components/gallary/react.vue";

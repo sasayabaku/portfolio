@@ -62,7 +62,7 @@
                 </v-row>
             </v-col>
         </v-row>
-        <v-row class="sub-component" id="activity-chart"><ActivityChart /></v-row>
+        <v-row class="sub-component" id="activity-chart" data-aos="zoom-in" data-aos-delay="100"><ActivityChart /></v-row>
     </div>
 </template>
 

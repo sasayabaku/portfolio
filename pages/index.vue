@@ -29,10 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  #index {
-    margin: 0 3rem;
-  }
-
   .page {
     width: 100vw;
     padding: 3rem 0;
