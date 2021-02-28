@@ -1,5 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
+const {GITHUB_TOKEN} = process.env;
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -48,6 +50,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // 'nuxt-svg-loader'
+    '@nuxtjs/apollo'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -74,7 +77,14 @@ export default {
       }
     }
   },
-
+  apollo: {
+    clientConfigs: {
+      default: '~/apollo/client-configs/default.js'
+    }
+  },
+  publicRuntimeConfig: {
+    githubURL: GITHUB_TOKEN
+  },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   }

@@ -2,3 +2,5 @@ node_modules
 .nuxt
 .DS_Store
 coverage
+.env
+pages/testing.vue

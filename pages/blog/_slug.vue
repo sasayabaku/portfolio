@@ -44,11 +44,11 @@ export default {
             
             &::before {
                 content: "";
-                position: absolute;
+                position: relative;
                 width: 5px;
                 height: 4rem;
                 background: #e4286d;
-                left: 0;
+                left: -1rem;
             }
         }
 
@@ -61,11 +61,11 @@ export default {
 
             &::before {
                 content: "";
-                position: absolute;
+                position: relative;
                 width: 3px;
                 height: 2rem;
                 background: #e4286d;
-                left: 0;
+                left: -1rem;
             }
         }
 
