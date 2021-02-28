@@ -17,7 +17,13 @@
                         </v-col>
                     </v-row>
                 </v-tab-item>
-                <v-tab-item></v-tab-item>
+                <v-tab-item>
+                    <v-row>
+                        <v-col v-if="loaded" cols="12" sm="12" md="6" lg="4" align="center">
+                            <GitHubContrib />
+                        </v-col>
+                    </v-row>
+                </v-tab-item>
             </v-tabs>
         </v-col></v-row>
     </div>
@@ -28,6 +34,7 @@ import axios from 'axios';
 import QiitaContribChart from '~/components/charts/qiita-contribution.vue';
 import QiitaStockChart from '~/components/charts/qiita-stocks.vue';
 import QiitaViewChart from '~/components/charts/qiita-views.vue';
+import GitHubContrib from '~/components/charts/github-contribution.vue';
 export default {
     data() {
         return {
@@ -54,7 +61,8 @@ export default {
     components: {
         QiitaContribChart,
         QiitaStockChart,
-        QiitaViewChart
+        QiitaViewChart,
+        GitHubContrib
     },
 
 }

@@ -1,5 +1,7 @@
 # renew
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a271628-5354-47a8-b0cc-195b1a0932af/deploy-status)](https://app.netlify.com/sites/sasayabaku/deploys)
+
 ## Build Setup
 
 ```bash
