@@ -46,7 +46,7 @@ export default {
         }
     },
     async created() {
-        const response = await axios.get('https://private-engineer.an.r.appspot.com/get_work');
+        const response = await axios.get('https://private-engineer.an.r.appspot.com/get_work?date=14');
         const data = await response.data.data;
         const date = await data.map(n => new Date(Date.parse(n['date'])).toLocaleDateString());
         const likes = await data.map(n => n['likes']);
