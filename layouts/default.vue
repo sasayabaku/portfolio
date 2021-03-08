@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
         <div class="header"><Header/></div>
         <div class="contents">
             <nuxt />
@@ -20,8 +20,27 @@ export default {
 </script>
 
 <style lang="scss">
+
+
+    @media screen and (min-width: 480px){
+        body {
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 480px){
+        body {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        body {
+            font-size: 10px;
+        }
+    }
+
     body {
-        font-size: 16px;
         font-family: Helvetica, sans-serif;
         width: 100vw;
     }
@@ -36,6 +55,10 @@ export default {
 </style>
 
 <style scoped>
+    .main {
+        overflow: hidden;
+    }
+
     .header {
         width: 100%;
         height: 8vh;

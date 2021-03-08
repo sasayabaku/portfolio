@@ -130,6 +130,9 @@ export default {
     }
 
     #iconsView {
+
+        padding: 0 0 0 3rem;
+
         .icon {
             width: 5rem;
             height: 5rem;

@@ -140,7 +140,10 @@ export default {
 
     }
 
-    #activity-chart {
-        padding: 0 2rem;
+    @media screen and (min-width: 480px) {
+        #activity-chart {
+            padding: 0 2rem;
+        }        
     }
+
 </style>

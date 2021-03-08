@@ -1,7 +1,7 @@
 <template>
     <div id="activity-chart">
         <v-row><v-col cols="12" sm="12" md="12" lg=12>
-            <v-tabs vertical slider-color="#9e9e9e">
+            <v-tabs slider-color="#9e9e9e">
                 <v-tab>Qiita</v-tab>
                 <v-tab>GitHub</v-tab>
                 <v-tab-item>
