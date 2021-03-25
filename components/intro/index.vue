@@ -29,8 +29,6 @@ export default {
 
 <style scoped lang="scss">
     .introduce {
-        // background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(30,30,30,0.6) 20%, rgba(252, 252, 252, 0.6) 100%), url('/coding.jpg');
-        // background-size: cover;
         .image {
             height: 10rem;
             img {
@@ -43,18 +41,31 @@ export default {
 
         display: block;
         width: 90%;
-        margin: 0 10rem;
+        @media screen and (min-width: 480px) {
+            margin: 0 10rem;
+        }
 
         .accent {
-            text-align: left;
+            @media screen and (max-width: 480px) {
+                text-align: center;
+            }
+            @media screen and (min-width: 480px) {
+                text-align: left;
+            }
+
             font-family: 'arial';
             font-size: 2rem;
             font-weight: 900;
         }
 
         .description {
+            @media screen and (max-width: 480px) {
+                text-align: center;
+            }
+            @media screen and (min-width: 480px) {
+                text-align: left;
+            }
             margin-top: 1rem;
-            text-align: left;
             font-size: 1.2rem;
             color: #626a7f;
         }

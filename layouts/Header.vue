@@ -25,7 +25,8 @@
     .menu {
         position:relative;
         text-align: right;
-        margin-right: 10rem;
+        font-size: 0.8rem;
+        margin-right: 5em;
         top: 50%;
         transform: translateY(-50%);
     }

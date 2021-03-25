@@ -79,7 +79,6 @@ export default {
             .content {
                 width: 85%;
                 display: flex;
-                // justify-content: center;
                 margin-top: 4rem;
 
                 .icon {
