@@ -4,22 +4,22 @@
             <v-tabs slider-color="#9e9e9e">
                 <v-tab>Qiita</v-tab>
                 <v-tab>GitHub</v-tab>
-                <v-tab-item>
-                    <v-row>
-                        <v-col v-if="loaded" cols="12" sm="12" md="6" lg="4" align="center">
+                <v-tab-item active-class="graphs">
+                    <v-row align="center">
+                        <v-col v-if="loaded" cols="12" sm="12" md="12" lg="4" align="center">
                             <QiitaContribChart :likesData="likes" :Date="date"/>
                         </v-col>
-                        <v-col v-if="loaded" cols="12" sm="12" md="6" lg="4" align="center">
+                        <v-col v-if="loaded" cols="12" sm="12" md="12" lg="4" align="center">
                             <QiitaStockChart />
                         </v-col>
-                        <v-col v-if="loaded" cols="12" sm="12" md="6" lg="4" align="center">
+                        <v-col v-if="loaded" cols="12" sm="12" md="12" lg="4" align="center">
                             <QiitaViewChart />
                         </v-col>
                     </v-row>
                 </v-tab-item>
-                <v-tab-item>
+                <v-tab-item active-class="graphs">
                     <v-row>
-                        <v-col v-if="loaded" cols="12" sm="12" md="6" lg="4" align="center">
+                        <v-col v-if="loaded" cols="12" sm="12" md="8" lg="3" align="center">
                             <GitHubContrib />
                         </v-col>
                     </v-row>
@@ -83,4 +83,12 @@ export default {
         width: 90%;
         padding: 0 1rem;
     }
+</style>
+
+<style scoped>
+.graphs {
+    margin: 0 auto;
+    width: 90%;
+    min-height: 10rem;
+}
 </style>

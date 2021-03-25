@@ -83,8 +83,15 @@ export default {
 
     #garally {
         margin: 1rem 0;
-        padding: 0 3rem;
+        padding: 0rem 10rem;
 
+        @media screen and (min-width: 700px) {
+            padding: 0rem 6rem;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding: 0rem 3rem;
+        }
 
         .head {
             padding: 2rem 0;

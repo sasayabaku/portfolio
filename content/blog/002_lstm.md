@@ -1,6 +1,6 @@
 ---
 title: LSTMで検証してみた
-description: 'lsmtlstm'
+description: 'lstmの勉強のために学習してみた。データを見ながら試してみる'
 img: '/blog/unsplash.jpg'
 ---
 

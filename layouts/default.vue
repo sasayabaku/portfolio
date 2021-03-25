@@ -5,22 +5,27 @@
             <nuxt />
         </div>
         <div class="footer"><Footer /></div>
+        <div class="link">
+            <Links />
+        </div>
+
     </div>
 </template>
 
 <script>
 import Header from '~/layouts/Header.vue';
 import Footer from '~/layouts/Footer.vue';
+import Links from '~/layouts/links.vue';
 export default {
     components: {
         Header,
-        Footer
+        Footer,
+        Links
     },
 }
 </script>
 
 <style lang="scss">
-
 
     @media screen and (min-width: 480px){
         body {
@@ -54,7 +59,7 @@ export default {
     }
 </style>
 
-<style scoped>
+<style lang="scss" scoped>
     .main {
         overflow: hidden;
     }
@@ -68,13 +73,21 @@ export default {
     }
 
     .contents {
-        width: 100vw;
         padding-top: 8vh;
         position: relative;
     }
 
+    .link {
+        display: flex;
+
+        @media screen and (max-width: 700px) {
+            display: none;
+        }
+    }
+
     .footer {
-        width: 100%;
+        width: 60%;
         position: relative;
+        margin: 1.5rem auto;
     }
 </style>

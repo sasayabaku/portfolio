@@ -29,8 +29,6 @@ export default {
 
 <style scoped lang="scss">
     .introduce {
-        // background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(30,30,30,0.6) 20%, rgba(252, 252, 252, 0.6) 100%), url('/coding.jpg');
-        // background-size: cover;
         .image {
             height: 10rem;
             img {
