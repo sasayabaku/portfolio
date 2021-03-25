@@ -116,14 +116,14 @@ export default {
             align-items: center;
 
             img {
-                height: 70%;
+                height: 50%;
             }
 
         }
 
         .text {
             width: 70%;
-
+            font-size: 0.9rem;
             display:block;
             text-align: left;
 
@@ -140,7 +140,4 @@ export default {
 
     }
 
-    #activity-chart {
-        padding: 0 2rem;
-    }
 </style>

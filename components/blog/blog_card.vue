@@ -1,7 +1,7 @@
 <template>
-    <div class="card">
-        <v-row align="center">
-            <v-col cols="12" md="6" align="center">
+    <!-- <div class="card1"> -->
+        <!-- <v-row align="center"> -->
+            <!-- <v-col cols="12" md="6" align="center">
                 <div class="image">
                     <img :src="image" />
                 </div>
@@ -11,9 +11,21 @@
                     <div class="title">{{ title }}</div>
                     <div class="description">{{ description }}</div>
                 </div>
-            </v-col>
-        </v-row>
-    </div>
+            </v-col> -->
+            <vs-row><vs-col  align="center">
+            <vs-card type="1">
+                <template #title>
+                    <h3>{{ title }}</h3>
+                </template>
+                <template #img>
+                    <img :src="image" />
+                </template>
+                <template #text>
+                    {{ description }}
+                </template>
+            </vs-card>
+        </vs-col></vs-row>
+    <!-- </div> -->
 </template>
 
 <script>

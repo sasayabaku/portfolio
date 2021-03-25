@@ -83,8 +83,15 @@ export default {
 
     #garally {
         margin: 1rem 0;
-        padding: 0 3rem;
+        padding: 0rem 10rem;
 
+        @media screen and (min-width: 700px) {
+            padding: 0rem 6rem;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding: 0rem 3rem;
+        }
 
         .head {
             padding: 2rem 0;
@@ -102,7 +109,9 @@ export default {
     .text {
         display: block;
         width: 90%;
-        margin: 0 10rem;
+        @media screen and (min-width: 480px) {
+            margin: 0 10rem;
+        }
 
         .accent {
             text-align: left;
@@ -112,8 +121,14 @@ export default {
         }
 
         .description {
+            @media screen and (max-width: 480px) {
+                text-align: center;
+            }
+            @media screen and (min-width: 480px) {
+                text-align: left;
+            }
+            
             margin-top: 1rem;
-            text-align: left;
             font-size: 1.2rem;
             color: #626a7f;
         }

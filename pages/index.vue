@@ -31,13 +31,23 @@ export default {
 <style lang="scss" scoped>
   .page {
     width: 100vw;
-    padding: 3rem 0;
+    padding: 3rem 10rem;
     background-color: rgb(245, 245, 250);
+
+
+    @media screen and (min-width: 960px) {
+      padding: 3rem 10rem;
+    }
+
+    @media screen and (max-width: 960px) {
+      padding: 3rem 3rem;
+    }
+    
   }
 
   .page2 {
     width: 100vw;
-    padding: 3rem 0;
+    padding: 3rem 10rem;
     background-color: rgb(250, 250, 250);
   }
 </style>

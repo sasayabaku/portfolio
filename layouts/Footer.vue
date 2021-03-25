@@ -1,48 +1,62 @@
 <template>
     <div id="footer">
-        <div class="topRow">
-            <div class="link-icons">
-                <img src="~/static/icons/Linkedin-link.svg" />
-                <img src="~/static/icons/Qiita-link.svg" />
-            </div>
-        </div>
         <div class="bottomRow">
+            <div class="icons">
+                 <div class="each-icon"><a href="https://github.com/sasayabaku" target="_blank"><IconGithub /></a></div>
+                 <div class="each-icon"><IconLinkedIn /></div>
+                 <div class="each-icon"><IconQiita /></div> 
+            </div>
             <div class="copyrightDocument">
-                <small>&copy; 2020 sasayabaku</small>
+                <small>&copy; 2021 sasayabaku</small>
             </div>
         </div>
     </div>
 </template>
 
 <script lang="js">
+import IconGithub from '~/components/landing/sns-icons/github.vue';
+import IconLinkedIn from '~/components/landing/sns-icons/linkedin.vue';
+import IconQiita from '~/components/landing/sns-icons/qiita.vue';
 export default {
     components: {
+        IconGithub,
+        IconLinkedIn,
+        IconQiita
     }
 }
 </script>
 
 <style lang="scss" scoped>
-    #footer {
-        background-color: #2d2929;
-        height: 150px;
-    }
 
-    .topRow {
-        width: 100%;
-        padding: 1rem 0;
-        .link-icons {
-            padding-right: 3rem;
-            text-align: right;
-        }
+    #footer {
+        bottom: 0;
     }
 
     .bottomRow {
-        border-top: 1px solid #A7A6A6;
-        margin: 0 2rem;
+        width: 100%;
+        margin: 0 auto;
 
         .copyrightDocument {
-            color: #fff;
+            color: #2e2e2e;
+            text-align: center;
         }
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 2rem;
+
+        @media screen and (min-width: 700px) {
+            display: none;
+        }
+
+    }
+
+    .each-icon {
+        margin: 0 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <v-card min-width="80%" max-width="100%" max-height="100%">
+    <v-card min-width="80%" max-width="100%" min-height="60%" max-height="100%">
         <v-card-title>
             GitHub Contribution
         </v-card-title>
