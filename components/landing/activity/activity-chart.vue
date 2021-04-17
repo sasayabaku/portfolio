@@ -1,31 +1,16 @@
 <template>
     <div id="activity-chart">
-        <v-row><v-col cols="12" sm="12" md="12" lg=12>
-            <v-tabs slider-color="#9e9e9e">
-                <v-tab>Qiita</v-tab>
-                <v-tab>GitHub</v-tab>
-                <v-tab-item active-class="graphs">
-                    <v-row align="center">
-                        <v-col v-if="loaded" cols="12" sm="12" md="12" lg="4" align="center">
-                            <QiitaContribChart :likesData="likes" :Date="date"/>
-                        </v-col>
-                        <v-col v-if="loaded" cols="12" sm="12" md="12" lg="4" align="center">
-                            <QiitaStockChart />
-                        </v-col>
-                        <v-col v-if="loaded" cols="12" sm="12" md="12" lg="4" align="center">
-                            <QiitaViewChart />
-                        </v-col>
-                    </v-row>
-                </v-tab-item>
-                <v-tab-item active-class="graphs">
-                    <v-row>
-                        <v-col v-if="loaded" cols="12" sm="12" md="8" lg="3" align="center">
-                            <GitHubContrib />
-                        </v-col>
-                    </v-row>
-                </v-tab-item>
-            </v-tabs>
-        </v-col></v-row>
+        <v-row align="center">
+            <v-col v-if="loaded" cols="12" sm="12" md="12" lg="4" >
+                <QiitaContribChart />
+            </v-col>
+            <v-col v-if="loaded" cols="12" sm="12" md="12" lg="4" >
+                <QiitaStockChart />
+            </v-col>
+            <v-col v-if="loaded" cols="12" sm="12" md="12" lg="4">
+                <QiitaViewChart />
+            </v-col>
+        </v-row>
     </div>
 </template>
 

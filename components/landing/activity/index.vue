@@ -9,7 +9,7 @@
                     </div>
                 </div>
             </v-col>
-            <v-col cols="12" align="center">
+            <!-- <v-col cols="12" align="center">
                 <v-row>
                     <v-col cols="12" sm="12" md="6" lg="4" align="center">
                         <div class="card" id="github" data-aos="zoom-in" data-aos-delay="100">
@@ -60,7 +60,7 @@
                         </div>
                     </v-col>                     
                 </v-row>
-            </v-col>
+            </v-col> -->
         </v-row>
         <v-row class="sub-component" id="activity-chart" data-aos="zoom-in" data-aos-delay="100"><ActivityChart /></v-row>
     </div>
