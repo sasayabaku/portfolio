@@ -1,6 +1,6 @@
 <template>
     <div class="introduce">
-        <v-row>
+        <v-row align="center">
             <v-col cols="12" sm="12" md="6" lg="6" align="center">
                 <div class="text">
                     <div class="accent">
@@ -41,15 +41,16 @@ export default {
 
         display: block;
         width: 90%;
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 960px) {
             margin: 0 10rem;
         }
 
+
         .accent {
-            @media screen and (max-width: 480px) {
+            @media screen and (max-width: 960px) {
                 text-align: center;
             }
-            @media screen and (min-width: 480px) {
+            @media screen and (min-width: 960px) {
                 text-align: left;
             }
 
@@ -59,10 +60,10 @@ export default {
         }
 
         .description {
-            @media screen and (max-width: 480px) {
+            @media screen and (max-width: 960px) {
                 text-align: center;
             }
-            @media screen and (min-width: 480px) {
+            @media screen and (min-width: 960px) {
                 text-align: left;
             }
             margin-top: 1rem;
