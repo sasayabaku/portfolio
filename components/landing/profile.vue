@@ -1,5 +1,5 @@
 <template>
-    <div id="profile" data-aos="zoom-in" data-aos-delay="100">
+    <div id="profile" data-aos="zoom-in" data-aos-delay="300">
         <v-row align="center">
             <v-col cols="12" align="center">
                 <div id="greeting">Skillsets</div>
