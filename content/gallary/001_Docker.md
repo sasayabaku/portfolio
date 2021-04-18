@@ -1,14 +1,16 @@
 ---
 title: Docker
-description: 'This is Container Technical Library'
+description: 'Container Platform'
 color: '#3D4BBAB0'
-img: '/blog/unsplash.jpg'
+img: '/gallary/docker/docker_head.png'
 ---
 
 * APIサーバの実装
 * 機械学習モデルの評価
 * 各種テスト実行
 をコンテナで実装、色々やってます。
+
+---
 
 # Case 1
 
@@ -25,6 +27,8 @@ img: '/blog/unsplash.jpg'
 言語統一の実装コストを考慮して、各パイプラインタスク雨をDockerコンテナでひとまとめにした。  
 パイプラインを自動実行するために、 **Argo Workflow**を採用。  
 (コンテナとの親和性を考慮し、Apache AirflowではなくArgoを採用)
+    
+---
 
 # Case 2
 

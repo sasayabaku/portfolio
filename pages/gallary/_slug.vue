@@ -36,6 +36,10 @@ export default {
             line-height: 1.8rem;
         }
 
+        hr {
+            margin-top: 2rem;
+        }
+
         ul {
             margin: 1rem 0;
             padding-left: 3rem;
@@ -46,11 +50,14 @@ export default {
         h1 {
             margin: 2rem 0;
             color: #37374B;
-            font-size: 1.8rem;
+            font-size: 2rem;
+            position: relative;
+
         }
 
         h3 {
             margin: 2rem 0 1rem 0;
+            font-size: 1.6rem;
             color: #37374B;
         }
     }   
@@ -62,9 +69,18 @@ export default {
         margin: 3rem auto;
 
         .img {
-            margin: 2rem 0;
-            width: 100%;
-            text-align: center;
+            margin: 2rem auto;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                margin: auto;
+                max-width: 100%;
+                min-width: 80%;
+            }
+
+
         }
 
         .title {
