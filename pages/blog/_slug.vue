@@ -27,53 +27,53 @@ export default {
 }
 </script>
 
-<style lang="scss">
-    .nuxt-content {
-        p {
-            color: rgb(88, 81, 81);
-        }
+// <style lang="scss">
+//     .nuxt-content {
+//         p {
+//             color: rgb(88, 81, 81);
+//         }
 
-        h1 {
-            margin: 3rem 0;
-            padding-left: 1rem;
-            display: inline-flex;
-            align-items: center;
-            width: 100%;
-            height: 4rem;
-            background-color: lavenderblush;
+//         h1 {
+//             margin: 3rem 0;
+//             padding-left: 1rem;
+//             display: inline-flex;
+//             align-items: center;
+//             width: 100%;
+//             height: 4rem;
+//             background-color: lavenderblush;
             
-            &::before {
-                content: "";
-                position: relative;
-                width: 5px;
-                height: 4rem;
-                background: #e4286d;
-                left: -1rem;
-            }
-        }
+//             &::before {
+//                 content: "";
+//                 position: relative;
+//                 width: 5px;
+//                 height: 4rem;
+//                 background: #e4286d;
+//                 left: -1rem;
+//             }
+//         }
 
-        h2 {
-            margin: 2rem 0 1rem 0;
-            padding-left: 1rem;
-            display: inline-flex;
-            align-items: center;
-            color: #e4286d;
+//         h2 {
+//             margin: 2rem 0 1rem 0;
+//             padding-left: 1rem;
+//             display: inline-flex;
+//             align-items: center;
+//             color: #e4286d;
 
-            &::before {
-                content: "";
-                position: relative;
-                width: 3px;
-                height: 2rem;
-                background: #e4286d;
-                left: -1rem;
-            }
-        }
+//             &::before {
+//                 content: "";
+//                 position: relative;
+//                 width: 3px;
+//                 height: 2rem;
+//                 background: #e4286d;
+//                 left: -1rem;
+//             }
+//         }
 
-        h3 {
-            margin: 2rem 0 1rem 0;
-        }
-    }   
-</style>
+//         h3 {
+//             margin: 2rem 0 1rem 0;
+//         }
+//     }   
+// </style>
 
 <style lang="scss" scoped>
     .blog {
