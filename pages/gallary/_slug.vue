@@ -60,6 +60,17 @@ export default {
             font-size: 1.6rem;
             color: #37374B;
         }
+
+        h4 {
+            margin: 2rem 0 1rem 0;
+            font-size: 1.3rem;
+            color: #37374B;
+        }
+
+        img {
+            margin: 0 auto;
+            width: 60vw;
+        }
     }   
 </style>
 
