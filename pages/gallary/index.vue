@@ -1,6 +1,6 @@
 <template>
     <div id="garally">
-        <v-row class="head">
+        <v-row class="head" data-aos="zoom-in" data-aos-delay="100">
             <v-col cols="12" sm="12" md="6" lg="6" align="center">
                 <div class="text">
                     <div class="accent">
@@ -20,49 +20,41 @@
         </v-row>
 
         <v-row id="contents" justify="center" align="center">
-            <v-col cols="12" sm="6" md="4" lg="3" v-for="skill in $store.state.gallary.skillsets" :key="skill.id">
-                <div class="content" data-aos="fade-up" data-aos-delay="400">
-                    <div class="icon" :id="skill.clid">
-                     <img :src="skill.imgfile" />
-                    </div>
-                    <div class="name"><strong>{{skill.name}}</strong></div>
-                    <div class="description">{{skill.description}}</div>
-
-                    <div class="links">
-                        <button class="flat-button" @click="showModal(skill.name+'Detail')"><strong>Detail</strong></button>
-                        <!-- 以下でGallaryの情報を更新 -->
-                        <button class="reverse-flat-button" @click="showModal('showGallary')"><strong>Gallery</strong></button>
-                    </div>
-                </div>
+            <!-- <v-col cols="12" md="6" lg="3">
+                <Items title="Docker" sentence="This is Container Technical Library" color="#3D4BBAB0"/>
+            </v-col>
+            <v-col cols="12" md="6" lg="3">
+                <Items title="Vue.js" sentence="UI Framework" color="#35A66CB0" />
+            </v-col>
+            <v-col cols="12" md="6" lg="3">
+                <Items title="React.js" sentence="UI Framework" color="#3176CAb0" />
+            </v-col>
+            <v-col cols="12" md="6" lg="3">
+                <Items title="PyTorch" sentence="Deep Learning フレームワーク" color="#DF3D25b0" />
+            </v-col>              -->
+            <v-col cols="12" md="6" lg="3" v-for="article in articles" :key="article" data-aos="fade-up" data-aos-delay="300">
+                <nuxt-link :to="article.path"><Items :title="article.title" :sentence="article.description" :color="article.color" /></nuxt-link>
             </v-col>
         </v-row>
-        <div class="content-modal">
-            <modal name="DockerDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><DockerDetail/></modal>
-            <modal name="PyTorchDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><PyTorchDetail/></modal>
-            <modal name="ReactDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><ReactDetail/></modal>
-            <modal name="VueDetail" :resizable="false" :scrollable="true" height="auto" width="90%"><VueDetail/></modal>
 
-            <modal name="showGallary" :resizable="false" width="90%">
-                <div>   
-                    Show Gallary 工事中
-                </div>
-            </modal>
-        </div>
     </div>
 </template>
 
 <script>
-import DockerDetail from "@/components/gallary/docker.vue";
-import PyTorchDetail from "@/components/gallary/pytorch.vue";
-import ReactDetail from "@/components/gallary/react.vue";
-import VueDetail from "@/components/gallary/vue.vue";
+import Items from '~/components/gallary/item.vue';
+// import Item from '../../components/gallary/item.vue';
 
 export default {
     components: {
-        DockerDetail,
-        PyTorchDetail,
-        ReactDetail,
-        VueDetail
+        Items
+    },
+
+    async asyncData ({ $content }) {
+        const articles = await $content('gallary').fetch();
+
+        return {
+            articles
+        }
     },
 
     methods: {

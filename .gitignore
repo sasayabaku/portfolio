@@ -6,3 +6,5 @@ coverage
 pages/testing.vue
 
 pages/sandbox.vue
+
+dist/
