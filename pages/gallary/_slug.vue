@@ -30,10 +30,19 @@ export default {
 </script>
 
 <style lang="scss">
+
     .nuxt-content {
         p {
             color: #37374B;
             line-height: 1.8rem;
+
+            img {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                margin-bottom: 1.5rem;
+                width: 80%;
+            }
         }
 
         hr {
@@ -67,10 +76,10 @@ export default {
             color: #37374B;
         }
 
-        img {
-            margin: 0 auto;
-            width: 60vw;
-        }
+        // img {
+        //     margin: 0 auto;
+        //     width: 50vw;
+        // }
     }   
 </style>
 

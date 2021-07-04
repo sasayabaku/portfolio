@@ -6,6 +6,8 @@ color: '#3176CAb0'
 
 Reactで、PoCやサービスのプロトタイプを作成しています。
 
+---
+
 # Case 1 - COTOHA® Speech Note (ProtoType)
 
 ![](/gallary/react/SpeechNote.png)
@@ -17,4 +19,3 @@ COTOHA® APIを活用した、理学療法士 / 作業療法士が指導する�
 
 **Project Link** : [AI技術を超高齢化社会にどう活かす？ コミュニケーションAI「COTOHA®」の可能性 |C4BASE | NTTコミュニケーションズ](https://www.ntt.com/business/lp/mirai_biz/project/project_11.html)
 
-    
