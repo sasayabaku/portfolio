@@ -1,6 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 
-const {GITHUB_TOKEN} = process.env;
+const {GITHUB_TOKEN, QIITA_TOKEN} = process.env;
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
@@ -86,7 +86,8 @@ export default {
     }
   },
   publicRuntimeConfig: {
-    githubURL: GITHUB_TOKEN
+    githubURL: GITHUB_TOKEN,
+    qiitaURL: QIITA_TOKEN
   },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
