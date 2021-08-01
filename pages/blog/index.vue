@@ -13,41 +13,89 @@
             </v-col>
             <v-col cols="12" sm="12" md="6" lg="6" align="center">
                 <div class="image">
-                    <img src='blog_illust.svg'/>
+                    <img src='/blog_illust.svg'/>
                 </div>
                 <div class="copyright">illustrate on <a href="https://undraw.co">unDraw</a></div>
             </v-col>
         </v-row>
-        <v-row id="contents" justify="center" align="center"> 
-            <v-col cols="12" sm="12" md="6" lg="6" v-for="article in articles" :key="article">
-                <div class="card-content" data-aos="zoom-out-down">
-                    <nuxt-link :to="article.path"><blog-card :image="article.img" :title="article.title" :description="article.description"/></nuxt-link>
-                </div>
-            </v-col>
-        </v-row>
+
+
+        <div class="contents">
+            <div v-if="loaded" class="rows">
+                <v-row align="center">
+                    <v-col cols="12" sm="12" md="6" lg="6" v-for="content in articles" :key="content.url" data-aos="zoom-in" data-aos-delay="200">
+                        <a :href="content.url" target="_blank"><ContentCard :title="content.title" :likes="content.likes_count" :service="content.service"/></a>
+                    </v-col>
+                </v-row>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
-import blog_card from '@/components/blog/blog_card.vue';
+import ContentCard from '~/components/blog/contents_card.vue';
+import axios from 'axios';
 
 export default {
-
     components: {
-        blog_card
+        ContentCard
     },
 
-    async asyncData ({ $content }) {
-        const articles = await $content('blog').fetch()
-
+    data() {
         return {
-            articles
+            articles: null,
+            loaded: false
         }
+    },
+
+    async created() {
+        const sort_articles = (a, b) => {
+            const dateA = new Date(a['updated_at']);
+            const dateB = new Date(b['updated_at']);
+
+            let comparison = 0;
+            if(dateA > dateB) {
+                comparison = 1;
+            } else if (dateA < dateB) {
+                comparison = -1;
+            }
+
+            return comparison * -1;
+        };
+
+        const accessToken = this.$config.qiitaURL;
+        const url = "https://qiita.com/api/v2/users/sasayabaku/items?per_page=100";
+        const config = {
+            headers : {
+                "content-type": "application/json",
+                "Authorization": `Bearer ${accessToken}`
+            }
+        }
+
+        const response = await axios.get(url, config);
+        const data = await response.data;
+        const articles = await data.map(n => ({
+            'title':n['title'],
+            'url':n['url'],
+            'updated_at':n['updated_at'],
+            'likes_count':n['likes_count'],
+            'service':'qiita'
+        }));
+
+        await articles.sort(sort_articles);
+        this.articles = await articles;
+
+        this.loaded = true;
     }
 }
 </script>
 
 <style scoped lang="scss">
+
+    a { 
+        text-decoration: none;
+        color: black;
+    }
 
     #blog {
         margin: 1rem 2rem;
@@ -109,7 +157,8 @@ export default {
         }
     }
 
-    .card-content {
-        margin: 1.5rem 0;
+    .contents {
+        width: 100vw;
+        padding: 3rem 10rem;
     }
 </style>

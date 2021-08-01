@@ -1,6 +1,7 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from 'vuetify/es5/util/colors';
+import * as FontAwesome from './build/fontawesome.js';
 
-const {GITHUB_TOKEN} = process.env;
+const {GITHUB_TOKEN, QIITA_TOKEN} = process.env;
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
@@ -41,8 +42,16 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    ['@nuxtjs/fontawesome', { component: 'fontAwesome', suffix: true }]
   ],
+  fontawesome: {
+    icons: {
+      solid: FontAwesome.solid,
+      regular: FontAwesome.regular,
+      brands: FontAwesome.brands
+    }
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
@@ -86,7 +95,8 @@ export default {
     }
   },
   publicRuntimeConfig: {
-    githubURL: GITHUB_TOKEN
+    githubURL: GITHUB_TOKEN,
+    qiitaURL: QIITA_TOKEN
   },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
