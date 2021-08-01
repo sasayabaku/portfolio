@@ -23,8 +23,8 @@
         <div class="contents">
             <div v-if="loaded" class="rows">
                 <v-row align="center">
-                    <v-col cols="6" v-for="content in articles" :key="content.url" data-aos="zoom-in" data-aos-delay="200">
-                        <a :href="content.url" target="_blank"><ContentCard :title="content.title" :likes="content.likes_count" /></a>
+                    <v-col cols="12" sm="12" md="6" lg="6" v-for="content in articles" :key="content.url" data-aos="zoom-in" data-aos-delay="200">
+                        <a :href="content.url" target="_blank"><ContentCard :title="content.title" :likes="content.likes_count" :service="content.service"/></a>
                     </v-col>
                 </v-row>
             </div>
