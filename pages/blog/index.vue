@@ -1,6 +1,6 @@
 <template>
     <div id="blog">
-        <v-row class="head">
+        <v-row class="head"  data-aos="fade-up">
             <v-col cols="12" sm="12" md="6" lg="6" align="center">
                 <div class="text">
                     <div class="accent">
@@ -28,6 +28,14 @@
                     </v-col>
                 </v-row>
             </div>
+            <div v-else class="rows">
+                <v-row align="center">
+                    <v-col cols="12" align="center">
+                        <div>Loading・・・</div>
+                        <Lottie :options="defaultOptions" :height="100" :width="100" :animCreated="handleAnimation" />
+                    </v-col>
+                </v-row>
+            </div>
         </div>
     </div>
 </template>
@@ -36,15 +44,26 @@
 import ContentCard from '~/components/blog/contents_card.vue';
 import axios from 'axios';
 
+import Lottie from '~/components/utils/lottie.vue';
+import * as animationData from "~/assets/data.json";
+
 export default {
     components: {
-        ContentCard
+        ContentCard,
+        Lottie
     },
 
     data() {
         return {
             articles: null,
-            loaded: false
+            loaded: false,
+            defaultOptions:  {animationData: animationData },
+            animationSpeed: 1
+        }
+    },
+    methods:{
+        handleAnimation: (anim) => {
+            this.anim = anim;
         }
     },
 

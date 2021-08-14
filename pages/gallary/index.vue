@@ -1,6 +1,6 @@
 <template>
     <div id="garally">
-        <v-row class="head" data-aos="zoom-in" data-aos-delay="100">
+        <v-row class="head" data-aos="fade-up" data-aos-delay="100">
             <v-col cols="12" sm="12" md="6" lg="6" align="center">
                 <div class="text">
                     <div class="accent">
@@ -20,18 +20,6 @@
         </v-row>
 
         <v-row id="contents" justify="center" align="center">
-            <!-- <v-col cols="12" md="6" lg="3">
-                <Items title="Docker" sentence="This is Container Technical Library" color="#3D4BBAB0"/>
-            </v-col>
-            <v-col cols="12" md="6" lg="3">
-                <Items title="Vue.js" sentence="UI Framework" color="#35A66CB0" />
-            </v-col>
-            <v-col cols="12" md="6" lg="3">
-                <Items title="React.js" sentence="UI Framework" color="#3176CAb0" />
-            </v-col>
-            <v-col cols="12" md="6" lg="3">
-                <Items title="PyTorch" sentence="Deep Learning フレームワーク" color="#DF3D25b0" />
-            </v-col>              -->
             <v-col cols="12" md="6" lg="3" v-for="article in articles" :key="article" data-aos="fade-up" data-aos-delay="300">
                 <nuxt-link :to="article.path"><Items :title="article.title" :sentence="article.description" :color="article.color" /></nuxt-link>
             </v-col>
