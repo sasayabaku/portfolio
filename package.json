@@ -27,12 +27,17 @@
     "nuxt": "^2.14.6",
     "vue-chartjs": "^3.5.1",
     "vue-js-modal": "^2.0.0-rc.6",
+    "vue-lottie": "^0.2.1",
     "vuesax": "^4.0.1-alpha.25",
     "vuex": "^3.5.1"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@iconify-icons/mdi": "^1.0.20",
     "@iconify/vue": "^1.0.6",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/vuetify": "^1.11.2",
     "@vue/test-utils": "^1.1.1",
     "babel-core": "^7.0.0-bridge.0",

@@ -4,3 +4,7 @@ node_modules
 coverage
 .env
 pages/testing.vue
+
+pages/sandbox.vue
+
+dist/
