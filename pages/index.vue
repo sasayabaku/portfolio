@@ -1,6 +1,6 @@
 <template>
   <div id="index">
-    <div class="page2" data-aos="zoom-in" data-aos-delay="100"><Introduce /></div>
+    <div class="page2" data-aos="fade-up" data-aos-delay="100"><Introduce /></div>
     <div class="page"><Landing /></div> 
     <div class="page2"><Activity /></div>
     <div class="page"><Skillsets /></div>
