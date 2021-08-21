@@ -1,8 +1,6 @@
 import colors from 'vuetify/es5/util/colors';
 import * as FontAwesome from './build/fontawesome.js';
 
-const {GITHUB_TOKEN, QIITA_TOKEN} = process.env;
-
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -24,7 +22,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    "@/static/css/main.scss",
+    "~/static/css/main.scss",
     "vuesax/dist/vuesax.css",
     "boxicons/css/boxicons.min.css"
   ],
@@ -43,7 +41,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
-    ['@nuxtjs/fontawesome', { component: 'fontAwesome', suffix: true }]
+    ['@nuxtjs/fontawesome', { component: 'fontAwesome', suffix: true }],
+    ['@nuxtjs/google-analytics', { id: process.env.GOOGLE_ANALYTICS_ID}]
   ],
   fontawesome: {
     icons: {
@@ -95,8 +94,8 @@ export default {
     }
   },
   publicRuntimeConfig: {
-    githubURL: GITHUB_TOKEN,
-    qiitaURL: QIITA_TOKEN
+    githubURL: process.env.GITHUB_TOKEN,
+    qiitaURL: process.env.QIITA_TOKEN
   },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
