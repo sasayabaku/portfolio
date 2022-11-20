@@ -59,7 +59,7 @@ export default {
 </style>
 <style scoped>
     #activity-chart {
-        width: 100vw;
+        width: 80vw;
     }
 
     .v-tab__items,
@@ -73,7 +73,7 @@ export default {
 <style scoped>
 .graphs {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     min-height: 10rem;
 }
 </style>

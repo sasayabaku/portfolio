@@ -40,7 +40,7 @@ export default {
     }
 
     @media screen and (max-width: 960px) {
-      padding: 3rem 3rem;
+      padding: 3rem 1rem;
     }
     
   }
@@ -49,5 +49,13 @@ export default {
     width: 100vw;
     padding: 3rem 10rem;
     background-color: rgb(250, 250, 250);
+
+    @media screen and (min-width: 960px) {
+      padding: 3rem 10rem;
+    }
+
+    @media screen and (max-width: 960px) {
+      padding: 3rem 1rem;
+    }
   }
 </style>

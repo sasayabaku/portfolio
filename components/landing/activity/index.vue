@@ -62,7 +62,9 @@
                 </v-row>
             </v-col> -->
         </v-row>
-        <v-row class="sub-component" id="activity-chart" data-aos="zoom-in" data-aos-delay="100"><ActivityChart /></v-row>
+        <v-row class="sub-component" id="activity-chart" data-aos="zoom-in" data-aos-delay="100">
+            <ActivityChart />
+        </v-row>
     </div>
 </template>
 
@@ -78,7 +80,12 @@ export default {
 <style lang="scss" scoped>
 
     .sub-component {
-        margin: 2rem 0
+        margin: 2rem 0;
+
+        @media screen and (max-width: 960px) {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     .activity {
