@@ -12,11 +12,32 @@ export default {
     title: 'sasayabaku',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    // 外部JSファイルの読み込み
+    script: [
+      {
+        src: 'https://unpkg.com/three@0.137.4/build/three.min.js',
+        async: true
+      },
+      {
+        src: 'https://unpkg.com/three@0.137.4/examples/js/controls/OrbitControls.js',
+        defer: true
+      },
+      {
+        src: 'https://unpkg.com/three@0.137.4/examples/js/renderers/CSS3DRenderer.js',
+        defer: true
+      },
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js',
+        integrity: 'sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==',
+        crossorigin: "anonymous",
+        referrerpolicy: "no-referrer"
+      }
     ]
   },
 
@@ -99,5 +120,5 @@ export default {
   },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+  },
 }
