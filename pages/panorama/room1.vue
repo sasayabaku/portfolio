@@ -164,7 +164,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overscroll-behavior: none;
+    overscroll-behavior: none !important;
 }
 .contents {
     position: fixed;
