@@ -1,10 +1,9 @@
 node_modules
+*.log*
 .nuxt
-.DS_Store
-coverage
+.nitro
+.cache
+.output
 .env
-pages/testing.vue
-
-pages/sandbox.vue
-
-dist/
+dist
+.DS_Store
