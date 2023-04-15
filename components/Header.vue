@@ -13,9 +13,9 @@
             <header class="bg-white fixed top-0 right-0 left-0 z-50">
             <nav class="bg-white border-gray-200 px-4 md:px-6 py-2.5 dark:bg-gray-800 drop-shadow-lg">
                 <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                    <a href="https://flowbite.com" class="flex items-center">
-                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Sasayabaku</span>
-                    </a>
+                    <div class="flex items-center">
+                        <span class="self-center text-xl font-semibold whitespace-nowrap">Sasayabaku</span>
+                    </div>
                     <div class="flex items-center md:order-2">
                 <button 
                     data-collapse-toggle="mobile-menu-2" type="button"   @click="hamburger()"

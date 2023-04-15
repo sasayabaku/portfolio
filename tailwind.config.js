@@ -13,7 +13,8 @@ module.exports = {
     colors: {
       'prim-cyan': '#0ED3CF',
       'prim-yellow': '#FACC15',
-      'white': 'white'
+      'white': 'white',
+      'prim-gray': '#626968'
     }
   },
   plugins: [],
