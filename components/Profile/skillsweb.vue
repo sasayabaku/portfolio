@@ -5,42 +5,60 @@ export default {
 </script>
 <template>
     <div class="container">
-        <h2 class="text-xl font-bold text-prim-yellow">Coding Skills</h2>
+        <h2 class="text-xl font-bold text-prim-cyan">Web Skills</h2>
         <br />
         <div class="skills">
             <div class="details">
-                <span>Web</span>
+                <span>HTML</span>
+                <span>Lv.7</span>
+            </div> 
+            <div class="bar">
+                <div id="html-bar"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="details">
+                <span>CSS</span>
                 <span>Lv.5</span>
             </div> 
             <div class="bar">
-                <div id="web-bar"></div>
+                <div id="css-bar"></div>
             </div>
         </div>
         <div class="skills">
             <div class="details">
-                <span>Machine Learning</span>
+                <span>React</span>
                 <span>Lv.4</span>
-            </div>
+            </div> 
             <div class="bar">
-                <div id="ml-bar"></div>
+                <div id="react-bar"></div>
             </div>
         </div>
         <div class="skills">
             <div class="details">
-                <span>Data Science</span>
+                <span>Next.js</span>
                 <span>Lv.3</span>
             </div>
             <div class="bar">
-                <div id="ds-bar"></div>
+                <div id="next-bar"></div>
             </div>
         </div>
         <div class="skills">
             <div class="details">
-                <span>Infrastructure</span>
-                <span>Lv.2</span>
+                <span>Vue</span>
+                <span>Lv.6</span>
             </div>
             <div class="bar">
-                <div id="if-bar"></div>
+                <div id="vue-bar"></div>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="details">
+                <span>Nuxt.JS</span>
+                <span>Lv.5</span>
+            </div>
+            <div class="bar">
+                <div id="nuxt-bar"></div>
             </div>
         </div>
     </div>
@@ -86,48 +104,68 @@ export default {
     width: 0;
     height: 5px;
     border-radius: 10px;
-    background-color: #fac60a;
-    border: 1px solid #fac60a;
+    background-color: #0ED3CF;
+    border: 1px solid #0ED3CF;
     box-shadow: 0 0 5px rgba(28, 151, 252, 0.06);
 }
 
-#web-bar {
-    animation: web-fill 2s forwards;
+#html-bar {
+    animation: html-fill 2s forwards;
 }
 
-@keyframes web-fill {
+@keyframes html-fill {
     100% {
-        width: 50%;
+        width: 70%;
     }
 }
 
-#ml-bar {
-    animation: ml-fill 2s forwards;
+#css-bar {
+    animation: css-fill 2s forwards;
 }
 
-@keyframes ml-fill {
+@keyframes css-fill {
+    100% {
+        width: 70%;
+    }
+}
+
+#react-bar {
+    animation: react-fill 2s forwards;
+}
+
+@keyframes react-fill {
     100% {
         width: 40%;
     }
 }
 
-#ds-bar {
-    animation: ds-fill 2s forwards;
+#next-bar {
+    animation: next-fill 2s forwards;
 }
 
-@keyframes ds-fill {
+@keyframes next-fill {
     100% {
         width: 30%;
     }
 }
 
-#if-bar {
-    animation: if-fill 2s forwards;
+#vue-bar {
+    animation: vue-fill 2s forwards;
 }
 
-@keyframes if-fill {
+@keyframes vue-fill {
     100% {
-        width: 20%;
+        width: 60%;
+    }
+}
+
+#nuxt-bar {
+    animation: nuxt-fill 2s forwards;
+}
+
+@keyframes nuxt-fill {
+    100% {
+        width: 50%;
     }
 }
 

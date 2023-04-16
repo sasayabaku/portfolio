@@ -11,9 +11,29 @@
                 <h1 class="font-extrabold text-xl">Sasayabaku</h1>
                 <h2 class="text-base">AI & VR Service Architect</h2>
             </div>
-            <div class="m-8">
-                <ProfileSkills />
-            </div>
-        </div>     
+        </div>    
+        <div class="m-8">
+            <h2 class="text-2xl font-bold text-prim-gray">Skiils</h2>
+            <ul class="horizontal-list">
+                <li class="item m-8"><ProfileSkills /></li>
+                <li class="item m-8"><ProfileSkillsweb /></li>
+                <li class="item m-8"><ProfileSkillsml /></li>
+            </ul>
+        </div> 
     </div>
 </template>
+
+<style lang="css">
+ul.horizontal-list {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+li.item {
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+    max-width: 400px;
+}
+
+</style>

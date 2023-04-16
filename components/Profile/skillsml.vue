@@ -5,42 +5,42 @@ export default {
 </script>
 <template>
     <div class="container">
-        <h2 class="text-xl font-bold text-prim-yellow">Coding Skills</h2>
+        <h2 class="text-xl font-bold text-prim-red">ML Skills</h2>
         <br />
         <div class="skills">
             <div class="details">
-                <span>Web</span>
-                <span>Lv.5</span>
+                <span>Tensorflow</span>
+                <span>Lv.2</span>
             </div> 
             <div class="bar">
-                <div id="web-bar"></div>
+                <div id="tf-bar"></div>
             </div>
         </div>
         <div class="skills">
             <div class="details">
-                <span>Machine Learning</span>
+                <span>Keras</span>
                 <span>Lv.4</span>
-            </div>
+            </div> 
             <div class="bar">
-                <div id="ml-bar"></div>
+                <div id="keras-bar"></div>
             </div>
         </div>
         <div class="skills">
             <div class="details">
-                <span>Data Science</span>
-                <span>Lv.3</span>
-            </div>
+                <span>PyTorch</span>
+                <span>Lv.6</span>
+            </div> 
             <div class="bar">
-                <div id="ds-bar"></div>
+                <div id="torch-bar"></div>
             </div>
         </div>
         <div class="skills">
             <div class="details">
-                <span>Infrastructure</span>
-                <span>Lv.2</span>
+                <span>Scikit Learn</span>
+                <span>Lv.6</span>
             </div>
             <div class="bar">
-                <div id="if-bar"></div>
+                <div id="sklearn-bar"></div>
             </div>
         </div>
     </div>
@@ -86,48 +86,48 @@ export default {
     width: 0;
     height: 5px;
     border-radius: 10px;
-    background-color: #fac60a;
-    border: 1px solid #fac60a;
+    background-color: #fa455a;
+    border: 1px solid #fa455a;
     box-shadow: 0 0 5px rgba(28, 151, 252, 0.06);
 }
 
-#web-bar {
-    animation: web-fill 2s forwards;
+#tf-bar {
+    animation: tf-fill 2s forwards;
 }
 
-@keyframes web-fill {
+@keyframes tf-fill {
     100% {
-        width: 50%;
+        width: 20%;
     }
 }
 
-#ml-bar {
-    animation: ml-fill 2s forwards;
+#keras-bar {
+    animation: keras-fill 2s forwards;
 }
 
-@keyframes ml-fill {
+@keyframes keras-fill {
     100% {
         width: 40%;
     }
 }
 
-#ds-bar {
-    animation: ds-fill 2s forwards;
+#torch-bar {
+    animation: torch-fill 2s forwards;
 }
 
-@keyframes ds-fill {
+@keyframes torch-fill {
     100% {
-        width: 30%;
+        width: 60%;
     }
 }
 
-#if-bar {
-    animation: if-fill 2s forwards;
+#sklearn-bar {
+    animation: sklearn-fill 2s forwards;
 }
 
-@keyframes if-fill {
+@keyframes sklearn-fill {
     100% {
-        width: 20%;
+        width: 60%;
     }
 }
 
