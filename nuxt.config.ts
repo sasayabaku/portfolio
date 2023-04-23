@@ -6,5 +6,11 @@ export default defineNuxtConfig({
             tailwindcss: {},
             autoprefixer: {}
         }
+    },
+    runtimeConfig: {
+        public: {
+            githubToken: process.env.NUXT_PUBLIC_GITHUB_TOKEN,
+            qiitaToken: process.env.NUXT_PUBLIC_QIITA_TOKEN
+        }
     }
 })
