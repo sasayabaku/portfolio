@@ -11,17 +11,6 @@
                 <h2 class="text-base">AI & VR Service Architect</h2>
             </div>
         </div>
-        <div class="mt-12 m-8 grid grid-cols-3 text-sm text-base" id="content-switch">
-            <div class="col-span-1">
-                <button>Skills</button>
-            </div>
-            <div class="col-span-1">
-                <button>Career</button>
-            </div>
-            <div class="col-span-1">
-                <button>Portfolio</button>
-            </div>
-        </div>
         <div class="m-8">
             <h2 class="text-2xl font-bold text-prim-gray">Skiils</h2>
             <ul class="horizontal-list">
@@ -30,6 +19,36 @@
                 <li class="item m-8"><ProfileSkillsml /></li>
             </ul>
         </div> 
+        <div class="m-8">
+            <h2 class="text-2xl font-bold text-prim-gray">Related Works</h2>
+            <ul class="pt-4">
+                <li class="m-4">
+                    <Works 
+                        title="Design WebVR Product"
+                        description="LightWeight VR Ecommerce."
+                    />
+                </li> 
+                <li class="m-4">
+                    <Works 
+                        title="3D Model Engineer"
+                        description="XR Commerce Strategic Planning."
+                    />
+                </li> 
+                <li class="m-4">
+                    <Works 
+                        title="MaaS Data Scientist"
+                        description="Data Analysis with Transportation Marketing."
+                    />
+                </li> 
+            </ul>
+            <br />
+            <div class="orig-button">
+                <button>More Info</button>
+            </div>
+        </div>
+        <div class="m-8">
+            <h2 class="text-2xl font-bold text-prim-gray">Contributions</h2>
+        </div>
     </div>
 </template>
 
@@ -54,6 +73,17 @@ li.item {
     border: 0.5px solid #626869;
     border-radius: 0.265rem;
     padding: 0.15rem 0.5rem;
+}
+
+.orig-button {
+    display: flex;
+    justify-content: center;    
+}
+.orig-button button {
+    padding: 0.25rem 1.75rem;
+    color: #626869;
+    border: solid 1px #626869;
+    border-radius: 0.3rem;
 }
 
 </style>
