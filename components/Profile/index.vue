@@ -21,7 +21,7 @@
         </div> 
         <div class="m-8">
             <h2 class="text-2xl font-bold text-prim-gray">Related Works</h2>
-            <ul class="pt-4">
+            <ul class="pt-4 grid md:grid-cols-1 lg:grid-cols-3  gap-4">
                 <li class="m-4">
                     <NuxtLink :to="`/works/design_web_vr`">
                         <Works 
