@@ -3,7 +3,7 @@ title: Design WebVR Product
 description: LightWeight VR Ecommerce.
 ---
 
-## Overview
+## Mission
 # Control the product storategy
 
 My mission is strategic management for the initial release of the product, including service UI/UX, sales strategy, and release planning.

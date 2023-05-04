@@ -33,6 +33,11 @@ console.log(data);
     margin-bottom: 2.5rem;
 }
 
+.content-text ul {
+    list-style: circle;
+    margin-left: 1rem;
+}
+
 </style>
 
 <style scoped>
