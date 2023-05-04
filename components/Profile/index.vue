@@ -23,10 +23,12 @@
             <h2 class="text-2xl font-bold text-prim-gray">Related Works</h2>
             <ul class="pt-4">
                 <li class="m-4">
-                    <Works 
-                        title="Design WebVR Product"
-                        description="LightWeight VR Ecommerce."
-                    />
+                    <NuxtLink :to="`/works/design_web_vr`">
+                        <Works 
+                            title="Design WebVR Product"
+                            description="LightWeight VR Ecommerce."
+                        />
+                    </NuxtLink>
                 </li> 
                 <li class="m-4">
                     <Works 
