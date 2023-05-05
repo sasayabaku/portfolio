@@ -92,7 +92,7 @@ export default {
 }
 
 #web-bar {
-    animation: web-fill 2s forwards;
+    animation: web-fill 2s forwards 1s;
 }
 
 @keyframes web-fill {
@@ -102,7 +102,7 @@ export default {
 }
 
 #ml-bar {
-    animation: ml-fill 2s forwards;
+    animation: ml-fill 2s forwards 1s;
 }
 
 @keyframes ml-fill {
@@ -112,7 +112,7 @@ export default {
 }
 
 #ds-bar {
-    animation: ds-fill 2s forwards;
+    animation: ds-fill 2s forwards 1s;
 }
 
 @keyframes ds-fill {
@@ -122,7 +122,7 @@ export default {
 }
 
 #if-bar {
-    animation: if-fill 2s forwards;
+    animation: if-fill 2s forwards 1s;
 }
 
 @keyframes if-fill {

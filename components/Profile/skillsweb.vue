@@ -110,7 +110,7 @@ export default {
 }
 
 #html-bar {
-    animation: html-fill 2s forwards;
+    animation: html-fill 2s forwards 1s;
 }
 
 @keyframes html-fill {
@@ -120,7 +120,7 @@ export default {
 }
 
 #css-bar {
-    animation: css-fill 2s forwards;
+    animation: css-fill 2s forwards 1s;
 }
 
 @keyframes css-fill {
@@ -130,7 +130,7 @@ export default {
 }
 
 #react-bar {
-    animation: react-fill 2s forwards;
+    animation: react-fill 2s forwards 1s;
 }
 
 @keyframes react-fill {
@@ -140,7 +140,7 @@ export default {
 }
 
 #next-bar {
-    animation: next-fill 2s forwards;
+    animation: next-fill 2s forwards 1s;
 }
 
 @keyframes next-fill {
@@ -150,7 +150,7 @@ export default {
 }
 
 #vue-bar {
-    animation: vue-fill 2s forwards;
+    animation: vue-fill 2s forwards 1s;
 }
 
 @keyframes vue-fill {
@@ -160,7 +160,7 @@ export default {
 }
 
 #nuxt-bar {
-    animation: nuxt-fill 2s forwards;
+    animation: nuxt-fill 2s forwards 1s;
 }
 
 @keyframes nuxt-fill {

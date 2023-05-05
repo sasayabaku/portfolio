@@ -92,7 +92,7 @@ export default {
 }
 
 #tf-bar {
-    animation: tf-fill 2s forwards;
+    animation: tf-fill 2s forwards 1s;
 }
 
 @keyframes tf-fill {
@@ -102,7 +102,7 @@ export default {
 }
 
 #keras-bar {
-    animation: keras-fill 2s forwards;
+    animation: keras-fill 2s forwards 1s;
 }
 
 @keyframes keras-fill {
@@ -112,7 +112,7 @@ export default {
 }
 
 #torch-bar {
-    animation: torch-fill 2s forwards;
+    animation: torch-fill 2s forwards 1s;
 }
 
 @keyframes torch-fill {
@@ -122,7 +122,7 @@ export default {
 }
 
 #sklearn-bar {
-    animation: sklearn-fill 2s forwards;
+    animation: sklearn-fill 2s forwards 1s;
 }
 
 @keyframes sklearn-fill {

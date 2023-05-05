@@ -92,7 +92,7 @@ export default {
 }
 
 #storategy-bar {
-    animation: storategy-fill 2s forwards;
+    animation: storategy-fill 2s forwards 1s;
 }
 
 @keyframes storategy-fill {
@@ -102,7 +102,7 @@ export default {
 }
 
 #fe-bar {
-    animation: fe-fill 2s forwards;
+    animation: fe-fill 2s forwards 1s;
 }
 
 @keyframes fe-fill {
@@ -112,7 +112,7 @@ export default {
 }
 
 #sa-bar {
-    animation: sa-fill 2s forwards;
+    animation: sa-fill 2s forwards 1s;
 }
 
 @keyframes sa-fill {
@@ -122,7 +122,7 @@ export default {
 }
 
 #visualization-bar {
-    animation: visualization-fill 2s forwards;
+    animation: visualization-fill 2s forwards 1s;
 }
 
 @keyframes visualization-fill {
