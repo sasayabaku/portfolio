@@ -13,10 +13,12 @@
         </div>
         <div class="m-8 lg:m-16">
             <h2 class="text-2xl font-bold text-prim-gray">Skiils</h2>
+            <div class="text-prim-gra font-thin">scroll view more →</div>
             <ul class="horizontal-list">
-                <li class="item m-8"><ProfileSkills /></li>
-                <li class="item m-8"><ProfileSkillsweb /></li>
-                <li class="item m-8"><ProfileSkillsml /></li>
+                <li class="item my-8 mx-4"><ProfileSkills /></li>
+                <li class="item my-8 mx-4"><ProfileSkillsweb /></li>
+                <li class="item my-8 mx-4"><ProfileSkillsml /></li>
+                <li class="item my-8 mx-4"><ProfileSkillsds /></li>
             </ul>
         </div> 
         <div class="m-8 lg:m-16">

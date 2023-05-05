@@ -1,4 +1,10 @@
-<script lang="ts">
+<script setup lang="ts">
+import GitHubIcon from '../public/icons/github.svg?component';
+import LinkedinIcon from '../public/icons/linkedin.svg?component';
+import QiitaIcon from '../public/icons/qiita.svg?component';
+
+</script>
+<script lang="ts">    
     export default {
         methods: {
             hamburger() {
@@ -33,21 +39,22 @@
             >
                 <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
                     <li>
-                        <a href="https://github.com/sasayabaku" target="_blank" class="block py-2 pr-4 pl-3 text-gray-700 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">
-                            GitHub
+                        <a href="https://github.com/sasayabaku" target="_blank" class="flex items-center py-2 pr-4 pl-3 text-gray-700 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">
+                            <div class="mr-2"><GitHubIcon id="github-icon" style="width:1rem"/></div>
+                            <div>GitHub</div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Marketplace</a>
+                        <a href="#" target="_blank" class="flex items-center py-2 pr-4 pl-3 text-gray-700 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">
+                            <div class="mr-2"><LinkedinIcon id="linkedin-icon" style="width:1rem"/></div>
+                            <div>LinkedIn</div>
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Features</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Team</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">Contact</a>
+                        <a href="#" target="_blank" class="flex items-center py-2 pr-4 pl-3 text-gray-700 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0">
+                            <div class="mr-2"><QiitaIcon id="qiita-icon" style="width:1rem"/></div>
+                            <div>Qiita</div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -56,3 +63,15 @@
 </header>
 
 </template>
+
+<style scoped>
+
+#linkedin-icon {
+    fill: #0A66C2;
+}
+
+#qiita-icon {
+    fill: #55C500;
+}
+
+</style>

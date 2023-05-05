@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import svgLoader from 'vite-svg-loader'
+
 export default defineNuxtConfig({
     css: ['~/assets/css/main.css'],
     modules: [
@@ -15,5 +18,10 @@ export default defineNuxtConfig({
             githubToken: process.env.NUXT_PUBLIC_GITHUB_TOKEN,
             qiitaToken: process.env.NUXT_PUBLIC_QIITA_TOKEN
         }
+    },
+    vite: {
+        plugins: [
+            svgLoader()
+        ]
     }
 })
